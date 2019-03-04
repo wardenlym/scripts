@@ -10,9 +10,6 @@ wget https://dl.google.com/go/go1.12.linux-amd64.tar.gz \
 
 git clone https://github.com/wardenlym/dotfiles .dotfiles && cd .dotfiles && ./setup.sh
 
-sudo sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-sed -i 's/plugins=(git)/plugins=(git golang docker kubectl aws)/' .zshrc
-sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="ys"/' .zshrc
 
 sudo apt-get install -y \
     apt-transport-https \
@@ -29,3 +26,8 @@ sudo apt-get update
 sudo apt-get install -y docker-ce
 sudo usermod -aG docker ubuntu
 echo "docker installed"
+
+sudo sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sed -i 's/plugins=(git)/plugins=(git golang docker kubectl aws)/' .zshrc
+sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="ys"/' .zshrc
+
