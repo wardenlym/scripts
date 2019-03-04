@@ -5,7 +5,8 @@ sudo apt-get install -y git python zsh tmux vim
 
 wget https://dl.google.com/go/go1.12.linux-amd64.tar.gz \
     && tar -xzf go1.12.linux-amd64.tar.gz \
-    && sudo cp go/bin/go /usr/bin/go
+    && sudo cp go/bin/go /usr/bin/go \
+    && rm go1.12.linux-amd64.tar.gz
 
 git clone https://github.com/wardenlym/dotfiles .dotfiles && cd .dotfiles && ./setup.sh
 
