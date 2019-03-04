@@ -1,10 +1,9 @@
 #!/bin/bash -x
 sudo apt-get update
-sudo apt-get upgrade -y
 
 sudo apt-get install -y git python zsh tmux vim
 
-wget https://dl.google.com/go/go1.12.linux-amd64.tar.gz && tar -C /usr/local -xzf go1.12.linux-amd64.tar.gz
+wget https://dl.google.com/go/go1.12.linux-amd64.tar.gz && sudo tar -C /usr/local -xzf go1.12.linux-amd64.tar.gz
 
 git clone https://github.com/wardenlym/dotfiles .dotfiles && cd .dotfiles && ./setup.sh
 
