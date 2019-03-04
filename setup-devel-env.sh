@@ -11,6 +11,7 @@ wget https://dl.google.com/go/go1.12.linux-amd64.tar.gz \
 git clone https://github.com/wardenlym/dotfiles .dotfiles && cd .dotfiles && ./setup.sh
 
 sudo sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sed -i 's/plugins=(git)/plugins=(git golang docker kubectl aws)/' .zshrc
 
 sudo apt-get install -y \
     apt-transport-https \
