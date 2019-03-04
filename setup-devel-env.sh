@@ -30,4 +30,3 @@ echo "docker installed"
 sudo sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 sed -i 's/plugins=(git)/plugins=(git golang docker kubectl aws)/' .zshrc
 sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="ys"/' .zshrc
-
