@@ -1,4 +1,4 @@
-VERSION="1.11.8.linux-amd64"
+VERSION="1.13.4.linux-amd64"
 rm go$VERSION.tar.gz
 wget https://dl.google.com/go/go$VERSION.tar.gz
 sudo tar -zxvf go$VERSION.tar.gz -C /usr/local/
